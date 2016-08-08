@@ -18,12 +18,16 @@ class VersionPlugin extends BasePlugin {
     return 'http://yellostudio.co.uk';
   }
 
-  public function addTwigExtension() {
-    Craft::import('plugins.version.twigextensions.version');
-    return new version();
+  public function getDocumentationUrl() {
+    return 'https://github.com/marknotton/craft-plugin-version';
   }
 
   public function getReleaseFeedUrl() {
     return 'https://raw.githubusercontent.com/marknotton/craft-plugin-version/master/version/releases.json';
+  }
+
+  public function addTwigExtension() {
+    Craft::import('plugins.version.twigextensions.version');
+    return new version();
   }
 }
