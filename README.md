@@ -1,9 +1,7 @@
-# **Version** for Craft CMS
+# **"Version"** for Craft CMS
 Twig Extension adds a url parameter to a file based on it's last modified timestamp.
 
 ### Usage
-
-GitHub's fenced code blocks are also supported with **Highlight.js** syntax highlighting:
 
 ```
 // Default parameter name is 'v'
