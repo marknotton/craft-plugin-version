@@ -1,8 +1,9 @@
 # **"Version"** for Craft CMS
 Twig Extension adds a url parameter to a file based on it's last modified timestamp.
 
-### Usage
+Files being queried must be local in order for the timestamp to be retrieved. The current working directory is automatically used if one isn't found. So no need to absolute paths.
 
+### Usage
 ```
 // Default parameter name is 'v'
 <link rel="stylesheet" href="{{ ('/assets/css/main.css')|version }}" />
