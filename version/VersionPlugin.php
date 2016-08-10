@@ -10,6 +10,14 @@ class VersionPlugin extends BasePlugin {
     return '0.1';
   }
 
+  public function getSchemaVersion() {
+    return '0.1';
+  }
+
+  public function getDescription() {
+    return 'Filter adds a url parameter to a file based on it\'s last modified timestamp.';
+  }
+
   public function getDeveloper() {
     return 'Yello Studio';
   }
