@@ -28,7 +28,7 @@ class version extends \Twig_Extension {
     if(file_exists($fileVal)) {
 
       // The second argument defines what variable name will be used within the string. This gets also slugified.
-      $param = !empty((string)$param) ? ElementHelper::createSlug((string)func_get_arg(1)) : 'v';
+      $param = !empty($param) ? ElementHelper::createSlug(func_get_arg(1)) : 'v';
 
       $version = filemtime($fileClean);
 
